@@ -3,7 +3,7 @@ Floating Social Media Popout Buttons
 
 ## Description
 
-[Author Site](http://www.ReviewResults.in)|
+[Author Site](http://www.ReviewResults.in) |
 [Plugin Home Page](http://www.reviewresults.in/reviewresults/post/2012/09/08/Floating-Social-Media-Popout-WordPress-Plugin.aspx)
 
 Floating Social Media Popout allows your webpage to show a face book like box and GooglePlus Badge widget when a visitor mouse hover the floating face book icon or GooglePlus icon located on right side of webpage.This plugin is the most efficient way to integrate the important social plugins like GooglePlus, face book.  Jquery allows plug-in’s to pop out smoothly when user mouse hover the social media icons.
@@ -21,7 +21,7 @@ Floating Social Media Popout allows your webpage to show a face book like box an
 
 * GooglePlus Page ID - Set the GooglePlus page ID of your GooglePlus Page you want to display, leave this field blank if you don’t want to use it.
 
-* Twitter Username - Set the Twitter username of your Twitter profile you want to display, leave this field blank if you don’t want to use it.
+* Twitter Username (Implemented by <b>Ionică Bizău</b>) - Set the Twitter username of your Twitter profile you want to display, leave this field blank if you don’t want to use it.
 
 ## Installation
 1. Upload the plugin through `Plugins -> Add New -> Upload` interface of wordpress or upload `FloatingSocialMediaPopout` folder to the `/wp-content/plugins/` directory of your wordpress website folder.
