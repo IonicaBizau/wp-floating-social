@@ -1,0 +1,71 @@
+/* CSS Document */
+#FSPfacebook 
+{
+	Bottom: 50%;
+	z-index: 10005;
+	border:2px solid #395D99;
+	background-color: #fff;
+	width:230px;
+	height: 256px;
+	position: fixed;
+	right: -240px;
+}
+
+#FSPtwitter {
+	Bottom: 50%;
+	z-index: 10005;
+	border:2px solid #395D99;
+	background-color: #fff;
+	width:230px;
+	height: 256px;
+	position: fixed;
+	right: -240px;
+}
+
+#FSPtwitterDiv, #FSPfacebookDiv 
+{
+	width:230px;
+	height: 256px;
+	overflow: hidden;
+}
+#FSPtwitter iframe, #FSPfacebook iframe 
+{
+	border:0px solid #395D99;
+	overflow: hidden;
+	position: static;
+	height: 256px;
+	left:-2px;
+	top:-3px;
+}
+#FSPgoogleplus 
+{
+    z-index: 10004;
+    border:2px solid #D93A1A;
+    background-color: #FFF;
+    width:300px;
+    position: fixed;
+    right: -304px;
+} 
+#FSPgoogleplusimg 
+{
+    position: absolute;
+    top: -2px;
+    left: -35px;
+    border: 0;
+}
+
+.FSPMain
+{
+	visibility:visible;
+	Bottom: 50%;
+}
+
+.FSPImage 
+{
+	position: absolute;
+	top: -2px;
+	left: -35px;
+	border: 0;
+}
+
+
