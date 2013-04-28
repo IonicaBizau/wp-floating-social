@@ -175,6 +175,7 @@ function FFB_facebook_remove() {
 /* Deletes the database field */
 delete_option('FF_facebook_path');
 delete_option('FF_GplusID');
+delete_option('FF_TwitterUsername');
 } 
 if ( is_admin() ){
 
@@ -228,7 +229,7 @@ function floatingFB_html_page() {
         </table> 
 
         <input type="hidden" name="action" value="update" />
-        <input type="hidden" name="page_options" value="FF_facebook_path,FF_GplusID,FF_TwitterUsernmae" />
+        <input type="hidden" name="page_options" value="FF_facebook_path,FF_GplusID,FF_TwitterUsername" />
          
         <p>
         <input type="submit" value="<?php _e('Save Changes') ?>" />
