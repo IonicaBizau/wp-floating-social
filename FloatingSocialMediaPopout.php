@@ -125,18 +125,8 @@ function FFB_FaceBook_Float()
                     <img class="FSPImage" style="top: -1.1px; left: -33px;" runat="server" src="'.$TWFloatImage.'';
             // Start building the iframe
             $button .='" alt="" />
-                    <iframe
-                        scrolling="no"
-                        frameborder="0"
-                        style="width: 300px; height: 250px;
-                        border-top-style: none;
-                        border-right-style: none;
-                        border-bottom-style: none;
-                        border-left-style: none;
-                        border-width: initial;
-                        border-color: initial;"
-                        src="http://s.moopz.com/connect.html?user='.$TW_path.'"
-                        allowtransparency="true" name="fbfanIFrame_0"></iframe>
+                    <a class="twitter-timeline" href="https://twitter.com/'.$TW_path.'" data-widget-id="544226682694279168">Tweets by @'.$TW_path.'</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?\'http\':\'https\';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                     </div>
                     </div>
                     </div>';
