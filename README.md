@@ -2,7 +2,7 @@
 
 Floating Social Media Popout allows your webpage to show a face book like box and GooglePlus Badge widget when a visitor mouse hover the floating face book icon or GooglePlus icon located on right side of webpage.
 
-This is a fork of the [this plugin](http://www.reviewresults.in/reviewresults/post/2012/09/08/Floating-Social-Media-Popout-WordPress-Plugin.aspx)
+This is a fork of the [this plugin](http://www.reviewresults.in/reviewresults/post/2012/09/08/Floating-Social-Media-Popout-WordPress-Plugin.aspx).
 
 This plugin is the most efficient way to integrate the important social plugins like GooglePlus, face book.  Jquery allows plug-in’s to pop out smoothly when user mouse hover the social media icons.
 
