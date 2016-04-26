@@ -1,10 +1,14 @@
-# Floating Social Media Popout Buttons [![Support this project][donate-now]][paypal-donations]
 
-Floating Social Media Popout allows your webpage to show a face book like box and GooglePlus Badge widget when a visitor mouse hover the floating face book icon or GooglePlus icon located on right side of webpage.
+# Floating Social Media Popout Buttons [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![Version](https://img.shields.io/npm/v/wp-floating-social.svg)](https://www.npmjs.com/package/wp-floating-social) [![Downloads](https://img.shields.io/npm/dt/wp-floating-social.svg)](https://www.npmjs.com/package/wp-floating-social) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
 
-This is a fork of the [this plugin](http://www.reviewresults.in/reviewresults/post/2012/09/08/Floating-Social-Media-Popout-WordPress-Plugin.aspx).
+> Floating Social Media Popout allows your webpage to show a face book like box and GooglePlus Badge widget when a visitor mouse hover the floating face book icon or GooglePlus icon located on right side of webpage.
+
+
+This is a fork of the [this plugin](http://www.reviewresults.in/reviewresults/post/2012/09/08/Floating-Social-Media-Popout-WordPress-Plugin.aspx)
+
 
 This plugin is the most efficient way to integrate the important social plugins like GooglePlus, face book.  Jquery allows plug-in’s to pop out smoothly when user mouse hover the social media icons.
+
 
  - Provides floating facebook like box popout on mouse hover.
  - Provides floating GooglePlus badge popout on mouse hover.
@@ -24,10 +28,12 @@ This plugin is the most efficient way to integrate the important social plugins 
  - Set the URL and ID fields.
  - Click save to activate the Floating Social Media popouts.
 
-## How to contribute
+
+## :yum: How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
 
-## License
+
+## :scroll: License
 
 [MIT][license] © [Ionică Bizău][website]
 
