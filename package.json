@@ -1,6 +1,6 @@
 {
   "name": "wp-floating-social",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Floating Social Media Popout allows your webpage to show a face book like box and GooglePlus Badge widget when a visitor mouse hover the floating face book icon or GooglePlus icon located on right side of webpage.",
   "main": "lib/index.js",
   "scripts": {
