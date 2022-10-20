@@ -1,40 +1,40 @@
 /* CSS Document */
 #FSPfacebook {
-	bottom: 50%;
-	z-index: 10005;
-	border: 2px solid #395D99;
-	background-color: #fff;
-	width: 230px;
-	height: 256px;
-	position: fixed;
-	right: -240px;
+    bottom: 50%;
+    z-index: 10005;
+    border: 2px solid #395D99;
+    background-color: #fff;
+    width: 230px;
+    height: 256px;
+    position: fixed;
+    right: -240px;
 }
 
 #FSPtwitter {
-	bottom: 50%;
-	z-index: 10003;
-	border: 2px solid #395D99;
-	background-color: #fff;
-	width: 230px;
-	height: 256px;
-	position: fixed;
-	right: -240px;
+    bottom: 50%;
+    z-index: 10003;
+    border: 2px solid #395D99;
+    background-color: #fff;
+    width: 230px;
+    height: 256px;
+    position: fixed;
+    right: -240px;
 }
 
 #FSPtwitterDiv, #FSPfacebookDiv {
-	width: 230px;
-	height: 256px;
-	overflow: hidden;
+    width: 230px;
+    height: 256px;
+    overflow: hidden;
 }
 
 #FSPtwitter iframe, 
 #FSPfacebook iframe {
-	border: 0px solid #395D99;
-	overflow: hidden;
-	position: static;
-	height: 256px;
-	left: -2px;
-	top: -3px;
+    border: 0px solid #395D99;
+    overflow: hidden;
+    position: static;
+    height: 256px;
+    left: -2px;
+    top: -3px;
 }
 
 #FSPgoogleplus {
@@ -54,13 +54,13 @@
 }
 
 .FSPMain {
-	visibility: visible;
-	bottom: 50%;
+    visibility: visible;
+    bottom: 50%;
 }
 
 .FSPImage {
-	position: absolute;
-	top: -2px;
-	left: -35px;
-	border: 0;
+    position: absolute;
+    top: -2px;
+    left: -35px;
+    border: 0;
 }
