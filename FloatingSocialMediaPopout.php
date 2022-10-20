@@ -15,15 +15,16 @@ add_action('init', 'FFB_facebook_share_init');
 add_action('wp_footer', 'FFB_FaceBook_Float_Load', 100);
 
 function FFB_facebook_share_init() {
-	// DISABLED IN THE ADMIN PAGES
-	if (is_admin()) {
-		return;
-	}
+    // DISABLED IN THE ADMIN PAGES
+    if (is_admin()) {
+        return;
+    }
+
     wp_enqueue_script( 'jquery' );
-	wp_enqueue_style('fsb_style', '/wp-content/plugins/floatingsocialmediapopout/fsb_style.css');
+    wp_enqueue_style('fsb_style', '/wp-content/plugins/floatingsocialmediapopout/fsb_style.css');
 }
 function FFB_FaceBook_Float_Load() {
-	echo FFB_FaceBook_Float();
+    echo FFB_FaceBook_Float();
 }
 
 /* Facebook and Googleplus*/
@@ -49,8 +50,7 @@ function FFB_FaceBook_Float() {
 
     $button = '';
 
-    if ($FFB_path != '')
-    {
+    if ($FFB_path != '') {
         $button .='
                 <div class="FSPMain">
                 <div id="FSPfacebook" style="top: '.$MG_top.'px;">
@@ -76,8 +76,7 @@ function FFB_FaceBook_Float() {
     $GplusID = get_option('FF_GplusID');
     $GPFloatImage = get_plugin_directory().'/Images/GPlus.png"';
 
-    if ($GplusID != '')
-    {
+    if ($GplusID != '') {
         $button .='
                 <div class="FSPMain">
                 <div id="FSPgoogleplus" style="top: '.$MG_top.'px;">
@@ -113,8 +112,7 @@ function FFB_FaceBook_Float() {
     $TW_path = preg_replace('/:/','%3A', $TW_path);
     $TW_path = preg_replace('#/#','%2F', $TW_path);
 
-    if ($TW_path != '')
-    {
+    if ($TW_path != '') {
         $button .='
                 <div class="FSPMain">
                 <div id="FSPtwitter" style="top: '.$MG_top.'px;">
@@ -140,11 +138,12 @@ function FFB_FaceBook_Float() {
                                 function(){ jQuery("#FSPtwitter").stop(true,false).animate({right: -240}, 500); });
             });
             </script>';
+
     return $button;
 }
 
 function get_plugin_directory() {
-	return WP_PLUGIN_URL . '/floatingsocialmediapopout';
+    return WP_PLUGIN_URL . '/floatingsocialmediapopout';
 }
 
 /* Runs when plugin is activated */
@@ -163,7 +162,8 @@ function FFB_facebook_remove() {
     delete_option('FF_GplusID');
     delete_option('FF_TwitterUsername');
 }
-if (is_admin()){
+
+if (is_admin()) {
     /* Call the html code */
     add_action('admin_menu', 'floatingFB_admin_menu');
 
@@ -175,51 +175,51 @@ if (is_admin()){
 
 function floatingFB_html_page() {
 ?>
-<div>
-    <h2>Floating Sharing Popout Options</h2>
+    <div>
+        <h2>Floating Sharing Popout Options</h2>
 
-    <form method="post" action="options.php">
-        <?php wp_nonce_field('update-options'); ?>
+        <form method="post" action="options.php">
+            <?php wp_nonce_field('update-options'); ?>
 
-        <table width="800">
-            <tr valign="top">
-                <th width="120" scope="row">FaceBook Page URL</th>
-                <td width="680">
-                <input name="FF_facebook_path" type="text" id="FF_facebook_path"
-                value="<?php echo get_option('FF_facebook_path'); ?>" />
-                (ex. https://www.facebook.com/IonicaBizauPage)</td>
-            </tr>
-
-            <tr valign="top">
-                <th width="120" scope="row">GooglePlus Page ID</th>
-                <td width="680">
-                <input name="FF_GplusID" type="text" id="FF_GplusID"
-                value="<?php echo get_option('FF_GplusID'); ?>" />
-                (ex. 109274325672508858588)</td>
-            </tr>
-
-            <tr valign="top">
-                <th width="120" scope="row">Twitter Username</th>
-                <td width="680">
-                <input name="FF_TwitterUsername" type="text" id="FF_TwitterUsername"
-                value="<?php echo get_option('FF_TwitterUsername'); ?>" />
-                (ex. IonicaBizau)</td>
-            </tr>
-
-        </table>
             <table width="800">
-            <tr valign="left">
-            <th width="800">Note: Leave the fields blank if you don't have any GooglePlus Page, Facebook, or Twitter page. Only the Field with values will be enabled on the page.</th>
-            </tr>
-        </table>
+                <tr valign="top">
+                    <th width="120" scope="row">FaceBook Page URL</th>
+                    <td width="680">
+                    <input name="FF_facebook_path" type="text" id="FF_facebook_path"
+                    value="<?php echo get_option('FF_facebook_path'); ?>" />
+                    (ex. https://www.facebook.com/IonicaBizauPage)</td>
+                </tr>
 
-        <input type="hidden" name="action" value="update" />
-        <input type="hidden" name="page_options" value="FF_facebook_path,FF_GplusID,FF_TwitterUsername" />
+                <tr valign="top">
+                    <th width="120" scope="row">GooglePlus Page ID</th>
+                    <td width="680">
+                    <input name="FF_GplusID" type="text" id="FF_GplusID"
+                    value="<?php echo get_option('FF_GplusID'); ?>" />
+                    (ex. 109274325672508858588)</td>
+                </tr>
 
-        <p>
-        <input type="submit" value="<?php _e('Save Changes') ?>" />
-        </p>
-    </form>
-</div>
+                <tr valign="top">
+                    <th width="120" scope="row">Twitter Username</th>
+                    <td width="680">
+                    <input name="FF_TwitterUsername" type="text" id="FF_TwitterUsername"
+                    value="<?php echo get_option('FF_TwitterUsername'); ?>" />
+                    (ex. IonicaBizau)</td>
+                </tr>
+
+            </table>
+                <table width="800">
+                <tr valign="left">
+                <th width="800">Note: Leave the fields blank if you don't have any GooglePlus Page, Facebook, or Twitter page. Only the Field with values will be enabled on the page.</th>
+                </tr>
+            </table>
+
+            <input type="hidden" name="action" value="update" />
+            <input type="hidden" name="page_options" value="FF_facebook_path,FF_GplusID,FF_TwitterUsername" />
+
+            <p>
+            <input type="submit" value="<?php _e('Save Changes') ?>" />
+            </p>
+        </form>
+    </div>
 <?php
 }
